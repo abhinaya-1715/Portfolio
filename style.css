@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Animated Background */
+body {
+    background: linear-gradient(-45deg, #667eea, #764ba2, #11998e, #38ef7d);
+    background-size: 400% 400%;
+    animation: bgMove 10s ease infinite;
+    color: white;
+}
+
+@keyframes bgMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.header h1 {
+    font-size: 3rem;
+}
+
+.buttons button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+/* Glass Cards */
+.card {
+    width: 80%;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Skills */
+.skill-box span {
+    display: inline-block;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 20px;
+    background: rgba(0,0,0,0.4);
+}
+
+/* Projects */
+.project {
+    margin-top: 10px;
+    padding: 10px;
+    border-left: 4px solid #ffdd57;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0,0,0,0.6);
+}
+
+/* Reveal Animation */
+.hidden {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 1s;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Glow Mode */
+.glow {
+    box-shadow: 0 0 20px #ffdd57;
+}
